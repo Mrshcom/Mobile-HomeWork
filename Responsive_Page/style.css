@@ -1,0 +1,313 @@
+/* My custome css */
+/*input.screen-cal{
+	width:265px;
+}*/
+
+*{
+	margin:0;
+	padding:0;
+	border:none !important;
+	/*
+
+	*/
+}
+
+.cover{*zoom:1;}
+.cover:before,.cover:after{content:" ";display:table}
+.cover:after{clear:both}
+
+@font-face {
+  font-family: 'Bitter';
+  src: url('font/bitter.eot?#') format('eot'),  /* IE6–8 */
+       url('font/bitter.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('font/bitter.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'bold Bitter';
+  src: url('font/bitter_bold.eot?#') format('eot'),  /* IE6–8 */
+       url('font/bitter_bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('font/bitter_bold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+body{
+	background:#29414E url('images/pattern.png') repeat;
+	font-family: sans-serif;
+	color: #5D5D5D;
+}
+
+div.container{
+	width:960px;
+	margin:0 auto 20px;
+	background-color: #FFF;
+	border:1px solid red;
+}
+
+div.container header{
+	height:288px;
+	background:url(images/header.jpeg) no-repeat top center;
+	background-size: auto 288px;
+	position:relative;
+}
+
+header section.social-logo{
+	position:absolute;
+	right:20px;
+	bottom:20px;
+}
+
+header section.social-logo a{
+	display: block;
+	width: 32px;
+	height: 32px;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	position: relative;
+	top: 0;
+	text-indent: -9999px;
+	float: left;
+	margin: 0 0 0 10px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	background-size: 32px 32px;
+}
+
+header section.social-logo a:hover{
+	top: -5px;
+	opacity: 1;
+	-moz-opacity: 1;
+}
+
+header section.social-logo a#twitter{
+	background: url('images/socials_twitter.png') no-repeat center center;
+}
+
+header section.social-logo a#facebook{
+	background: url('images/socials_facebook.png') no-repeat center center;
+}
+
+header section.social-logo a#linkedin{
+	background: url('images/socials_linkedin.png') no-repeat center center;
+}
+
+header section.social-logo a#google{
+	background: url('images/socials_google.png') no-repeat center center;
+}
+
+header section.social-logo a#dribbble{
+	background: url('images/socials_dribbble.png') no-repeat center center;
+}
+
+header section.social-logo a#feed{
+	background: url('images/socials_feed.png') no-repeat center center;
+}
+
+div.container div.mampel{
+	padding:10px;
+	background:#FFF;
+	border:1px solid red;
+}
+
+figure{
+	width:220px;
+	height:299px;
+	outline:1px solid #E2E2E2;
+	float:left;
+}
+
+figure > a{
+	display:block;
+}
+
+div.about-me{
+	width: 340px;
+	float: left;
+	padding: 30px 40px 15px;
+	border:1px solid red;
+}
+
+div.about-me div.about-title h1{
+	font-size: 40px;
+	line-height: 30px;
+	margin: 0 0 20px;
+	padding: 0;
+	letter-spacing: -2px;
+	color: #5D5D5D;
+	font-family: 'bold Bitter', serif;
+}
+
+div.about-me div.about-title  h2{
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 25px;
+	margin: 5px 0 20px;
+	padding: 0;
+	color: #5D5D5D;
+	font-family: 'Bitter', serif;
+}
+
+div.about-me  span#yellow-bar{
+	height: 5px;
+	width: 100%;
+	margin: 20px 0;
+	font-size: 1px;
+	line-height: 1px;
+	display: block;
+	background: #F7CC52;
+}
+
+div.about-me  div.about-content p#one{
+	font-size: 19px;
+	line-height: 26px;
+	font-weight:bold;
+	margin:0 0 15px;
+}
+
+div.profile-info{
+	width: 240px;
+	min-height: 249px;
+	float: left;
+	color: #333;
+	padding: 30px 30px 20px 30px;
+	border:1px solid red;
+	background: #F7CC52;
+}
+
+div.profile-info h3{
+	font-size: 20px;
+	padding: 0;
+	margin: 0 0 25px;
+	line-height: 20px;
+	font-family: 'Bitter', serif;
+}
+
+div.profile-info div.detail{
+	padding: 0 0 15px;
+}
+
+div.profile-info div.detail span.title{
+	font-weight: bold;
+	float: left;
+	/*width: 25%;*/
+	text-transform: uppercase;
+	font-family: 'Bitter', serif;
+}
+
+span.title,
+span.desc{
+	display: block;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+div.profile-info div.detail span.desc{
+	/*width: 63%;*/
+	float: right;
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+
+@media only screen and (max-width: 959px) {
+
+	div.container{
+		width:90%;
+	}
+
+	div.about-me div.about-title h1{
+		font-size:25px;
+		margin-bottom:10px;
+	}
+	div.about-me div.about-title h2{
+		font-size:13px;
+		margin-bottom:10px;
+	}
+	div.about-me span#yellow-bar{
+		margin:10px 0;
+	}
+
+	div.about-me div.about-content p#one,
+	div.about-me div.about-content p#two{
+		font-size:15px;
+		line-height: 21px;
+	}
+
+	figure{
+		width:17%;
+		height:auto;
+		margin:3% 0 3% 3%;
+	}
+	figure img{
+		width:100%;
+		height:auto;
+	}
+
+	div.about-me{
+		width:30%;
+		padding:4%;
+	}
+	div.profile-info{
+		width:27%;
+		margin: 3% 3% 3% 0;
+	}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	div.container header{
+		height:150px;
+		margin-top:35px;
+	}
+
+	div.about-me{
+		width:58%;
+	}
+
+	figure{
+		width: 24%;
+		margin: 4% 2% 4% 4%;
+		height: auto;
+	}
+	div.profile-info{
+		width:85%;
+		margin: 0 4% 4%;
+	}
+
+}
+
+@media only screen and (max-width: 479px) {
+
+	div.container{
+		width:100%;
+	}
+
+	div.about-me div.about-title h1{
+		font-size:30px;
+		margin-bottom:20px;
+	}
+	div.about-me div.about-title h2{
+		font-size:20px;
+		margin-bottom:20px;
+	}
+
+	figure{
+		width: 92%;
+		margin: 4%;
+	}
+
+	div.about-me{
+		width:92%;
+	}
+	div.profile-info{
+		width: 76%;
+		padding: 8% 8% 5% 8%;
+	}
+
+}
